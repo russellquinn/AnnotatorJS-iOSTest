@@ -16,12 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.webView.delegate = self;
+    self.webView.scalesPageToFit = NO;
+    self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
+    [self.view addSubview:self.webView];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Example" ofType:@"html"];
+    NSString *htmlContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    [self.webView loadHTMLString:htmlContents baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end

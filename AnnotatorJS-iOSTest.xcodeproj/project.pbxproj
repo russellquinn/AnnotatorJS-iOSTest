@@ -15,6 +15,7 @@
 		61608E041A02F21200F8D5E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61608E031A02F21200F8D5E2 /* Images.xcassets */; };
 		61608E071A02F21200F8D5E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61608E051A02F21200F8D5E2 /* LaunchScreen.xib */; };
 		61608E131A02F21200F8D5E2 /* AnnotatorJS_iOSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61608E121A02F21200F8D5E2 /* AnnotatorJS_iOSTestTests.m */; };
+		61608E1E1A02FC4900F8D5E2 /* Example.html in Resources */ = {isa = PBXBuildFile; fileRef = 61608E1D1A02FC4900F8D5E2 /* Example.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		61608E0C1A02F21200F8D5E2 /* AnnotatorJS-iOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AnnotatorJS-iOSTestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61608E111A02F21200F8D5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61608E121A02F21200F8D5E2 /* AnnotatorJS_iOSTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnotatorJS_iOSTestTests.m; sourceTree = "<group>"; };
+		61608E1D1A02FC4900F8D5E2 /* Example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Example.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				61608E051A02F21200F8D5E2 /* LaunchScreen.xib */,
 				61608DFA1A02F21200F8D5E2 /* AnnotatorJS_iOSTest.xcdatamodeld */,
 				61608DF31A02F21200F8D5E2 /* Supporting Files */,
+				61608E1D1A02FC4900F8D5E2 /* Example.html */,
 			);
 			path = "AnnotatorJS-iOSTest";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				61608E021A02F21200F8D5E2 /* Main.storyboard in Resources */,
 				61608E071A02F21200F8D5E2 /* LaunchScreen.xib in Resources */,
 				61608E041A02F21200F8D5E2 /* Images.xcassets in Resources */,
+				61608E1E1A02FC4900F8D5E2 /* Example.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
