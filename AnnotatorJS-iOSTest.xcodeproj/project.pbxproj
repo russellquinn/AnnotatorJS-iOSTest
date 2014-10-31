@@ -15,7 +15,12 @@
 		61608E041A02F21200F8D5E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61608E031A02F21200F8D5E2 /* Images.xcassets */; };
 		61608E071A02F21200F8D5E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61608E051A02F21200F8D5E2 /* LaunchScreen.xib */; };
 		61608E131A02F21200F8D5E2 /* AnnotatorJS_iOSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61608E121A02F21200F8D5E2 /* AnnotatorJS_iOSTestTests.m */; };
-		61608E1E1A02FC4900F8D5E2 /* Example.html in Resources */ = {isa = PBXBuildFile; fileRef = 61608E1D1A02FC4900F8D5E2 /* Example.html */; };
+		61902FA21A0308D90090515E /* css in Resources */ = {isa = PBXBuildFile; fileRef = 61902F9C1A0308D90090515E /* css */; };
+		61902FA31A0308D90090515E /* example.html in Resources */ = {isa = PBXBuildFile; fileRef = 61902F9D1A0308D90090515E /* example.html */; };
+		61902FA41A0308D90090515E /* images in Resources */ = {isa = PBXBuildFile; fileRef = 61902F9E1A0308D90090515E /* images */; };
+		61902FA51A0308D90090515E /* src in Resources */ = {isa = PBXBuildFile; fileRef = 61902F9F1A0308D90090515E /* src */; };
+		61902FA61A0308D90090515E /* tools in Resources */ = {isa = PBXBuildFile; fileRef = 61902FA01A0308D90090515E /* tools */; };
+		61902FA71A0308D90090515E /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = 61902FA11A0308D90090515E /* vendor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +48,12 @@
 		61608E0C1A02F21200F8D5E2 /* AnnotatorJS-iOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AnnotatorJS-iOSTestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61608E111A02F21200F8D5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61608E121A02F21200F8D5E2 /* AnnotatorJS_iOSTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnotatorJS_iOSTestTests.m; sourceTree = "<group>"; };
-		61608E1D1A02FC4900F8D5E2 /* Example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Example.html; sourceTree = "<group>"; };
+		61902F9C1A0308D90090515E /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = Annotator/css; sourceTree = "<group>"; };
+		61902F9D1A0308D90090515E /* example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = example.html; path = Annotator/example.html; sourceTree = "<group>"; };
+		61902F9E1A0308D90090515E /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Annotator/images; sourceTree = "<group>"; };
+		61902F9F1A0308D90090515E /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = Annotator/src; sourceTree = "<group>"; };
+		61902FA01A0308D90090515E /* tools */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tools; path = Annotator/tools; sourceTree = "<group>"; };
+		61902FA11A0308D90090515E /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vendor; path = Annotator/vendor; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +104,6 @@
 				61608E051A02F21200F8D5E2 /* LaunchScreen.xib */,
 				61608DFA1A02F21200F8D5E2 /* AnnotatorJS_iOSTest.xcdatamodeld */,
 				61608DF31A02F21200F8D5E2 /* Supporting Files */,
-				61608E1D1A02FC4900F8D5E2 /* Example.html */,
 			);
 			path = "AnnotatorJS-iOSTest";
 			sourceTree = "<group>";
@@ -102,6 +111,7 @@
 		61608DF31A02F21200F8D5E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				61902F6B1A02FFAF0090515E /* Annotator */,
 				61608DF41A02F21200F8D5E2 /* Info.plist */,
 				61608DF51A02F21200F8D5E2 /* main.m */,
 			);
@@ -123,6 +133,19 @@
 				61608E111A02F21200F8D5E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61902F6B1A02FFAF0090515E /* Annotator */ = {
+			isa = PBXGroup;
+			children = (
+				61902F9C1A0308D90090515E /* css */,
+				61902F9D1A0308D90090515E /* example.html */,
+				61902F9E1A0308D90090515E /* images */,
+				61902F9F1A0308D90090515E /* src */,
+				61902FA01A0308D90090515E /* tools */,
+				61902FA11A0308D90090515E /* vendor */,
+			);
+			name = Annotator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,10 +228,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61902FA71A0308D90090515E /* vendor in Resources */,
+				61902FA41A0308D90090515E /* images in Resources */,
+				61902FA31A0308D90090515E /* example.html in Resources */,
+				61902FA21A0308D90090515E /* css in Resources */,
 				61608E021A02F21200F8D5E2 /* Main.storyboard in Resources */,
 				61608E071A02F21200F8D5E2 /* LaunchScreen.xib in Resources */,
+				61902FA51A0308D90090515E /* src in Resources */,
+				61902FA61A0308D90090515E /* tools in Resources */,
 				61608E041A02F21200F8D5E2 /* Images.xcassets in Resources */,
-				61608E1E1A02FC4900F8D5E2 /* Example.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +448,7 @@
 				61608E181A02F21200F8D5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61608E191A02F21200F8D5E2 /* Build configuration list for PBXNativeTarget "AnnotatorJS-iOSTestTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +457,7 @@
 				61608E1B1A02F21200F8D5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

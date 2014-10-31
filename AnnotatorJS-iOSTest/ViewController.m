@@ -22,9 +22,10 @@
     self.webView.delegate = self;
     self.webView.scalesPageToFit = NO;
     self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
+    self.webView.userInteractionEnabled = YES;
     [self.view addSubview:self.webView];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Example" ofType:@"html"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"example" ofType:@"html"];
     NSString *htmlContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     [self.webView loadHTMLString:htmlContents baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
 }
