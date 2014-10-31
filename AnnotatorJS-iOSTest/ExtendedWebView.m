@@ -37,6 +37,10 @@
 - (void)highlight:(id)sender
 {
     [self stringByEvaluatingJavaScriptFromString:@"$('.annotator-add').trigger('tap');$('.annotator-save').submit();"];
+    
+    //fun little hack to remove current selection from UIWebView :-/
+    self.userInteractionEnabled = NO;
+    self.userInteractionEnabled = YES;
 }
 
 @end
