@@ -21,6 +21,7 @@
 		61902FA51A0308D90090515E /* src in Resources */ = {isa = PBXBuildFile; fileRef = 61902F9F1A0308D90090515E /* src */; };
 		61902FA61A0308D90090515E /* tools in Resources */ = {isa = PBXBuildFile; fileRef = 61902FA01A0308D90090515E /* tools */; };
 		61902FA71A0308D90090515E /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = 61902FA11A0308D90090515E /* vendor */; };
+		61902FAA1A030C260090515E /* ExtendedWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61902FA91A030C260090515E /* ExtendedWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		61902F9F1A0308D90090515E /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = Annotator/src; sourceTree = "<group>"; };
 		61902FA01A0308D90090515E /* tools */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tools; path = Annotator/tools; sourceTree = "<group>"; };
 		61902FA11A0308D90090515E /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vendor; path = Annotator/vendor; sourceTree = "<group>"; };
+		61902FA81A030C260090515E /* ExtendedWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedWebView.h; sourceTree = "<group>"; };
+		61902FA91A030C260090515E /* ExtendedWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				61608DF81A02F21200F8D5E2 /* AppDelegate.m */,
 				61608DFD1A02F21200F8D5E2 /* ViewController.h */,
 				61608DFE1A02F21200F8D5E2 /* ViewController.m */,
+				61902FA81A030C260090515E /* ExtendedWebView.h */,
+				61902FA91A030C260090515E /* ExtendedWebView.m */,
 				61608E001A02F21200F8D5E2 /* Main.storyboard */,
 				61608E031A02F21200F8D5E2 /* Images.xcassets */,
 				61608E051A02F21200F8D5E2 /* LaunchScreen.xib */,
@@ -257,6 +262,7 @@
 				61608DFC1A02F21200F8D5E2 /* AnnotatorJS_iOSTest.xcdatamodeld in Sources */,
 				61608DF91A02F21200F8D5E2 /* AppDelegate.m in Sources */,
 				61608DFF1A02F21200F8D5E2 /* ViewController.m in Sources */,
+				61902FAA1A030C260090515E /* ExtendedWebView.m in Sources */,
 				61608DF61A02F21200F8D5E2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

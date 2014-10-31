@@ -3,7 +3,7 @@
 //  AnnotatorJS-iOSTest
 //
 //  Created by Russell Quinn on 10/30/14.
-//  Copyright (c) 2014 Safari. All rights reserved.
+//
 //
 
 #import "ViewController.h"
@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    self.webView = [[ExtendedWebView alloc] initWithFrame:self.view.bounds];
     self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     self.webView.delegate = self;
     self.webView.scalesPageToFit = NO;

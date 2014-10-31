@@ -3,7 +3,7 @@
 //  AnnotatorJS-iOSTest
 //
 //  Created by Russell Quinn on 10/30/14.
-//  Copyright (c) 2014 Safari. All rights reserved.
+//
 //
 
 #import "AppDelegate.h"
@@ -51,7 +51,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.safaribooksonline.AnnotatorJS-iOSTest.AnnotatorJS_iOSTest" in the application's documents directory.
+
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
